@@ -6,8 +6,16 @@ function renderBoard(board, selector) {
         strHTML += '<tr>';
         for (var j = 0; j < board[0].length; j++) {
             var cell = board[i][j];
-            var className = 'cell cell' + i + '-' + j;
-            strHTML += `<td class="${className}" onClick="cellClicked(this,${i},${j})"> ${cell} </td>`
+            var className = 'cell' + i + '-' + j;
+            console.log("cell:", cell);
+            if (!cell.isShown) {
+                cell = '';
+            } else if (cell.isMine) {
+                cell = MINE;
+            } else {
+                cell = cell.minesAroundCount
+            }
+            strHTML += `<td class="cell ${className}" onClick="cellClicked(this,${i},${j})" oncontextmenu="cellRightClicked(this,${i},${j}); return false;"> ${cell} </td>`
         }
         strHTML += '</tr>'
     }

@@ -1,14 +1,17 @@
     body {
         text-align: center;
         margin: auto;
+        background-color: rgb(230, 225, 225);
+    }
+    
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
     }
     
     .board {
         text-align: center;
-        margin-left: 40%;
-        /* height: 30px;
-    width: 30px; */
-        /* border: solid gray 1px; */
+        margin: auto;
+        display: inline-block;
     }
     
     .cell {
@@ -16,9 +19,66 @@
         margin: auto;
         height: 30px;
         width: 30px;
-        border: solid gray 1px;
+        border: solid gray 0.5px;
+        background-color: gray;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, inset 0px 0px 0px -3px rgba(188, 188, 188, 0);
+        box-shadow: 0px 10px 13px -7px #000000, inset 0px 0px 0px -3px rgba(188, 188, 188, 0);
+    }
+    
+    .levels {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
     .cell:hover {
         cursor: pointer;
+    }
+    
+    .show {
+        background-color: rgb(82, 212, 212);
+        color: black;
+    }
+    
+    .boom {
+        background-color: #ff4410;
+        -webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, inset -2px 0px 0px -29px rgba(204, 8, 38, 0);
+        box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, inset -2px 0px 0px -29px rgba(204, 8, 38, 0);
+    }
+    
+    .popup {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+    
+    .hiden {
+        display: none;
+    }
+    
+    button {
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, inset -2px 0px 0px -29px rgba(55, 172, 204, 0);
+        box-shadow: 0px 10px 13px -7px #000000, inset -2px 0px 0px -29px rgba(55, 172, 204, 0);
+    }
+    
+    .popup-contant {
+        margin: 20% auto;
+        height: 180px;
+        width: 300px;
+        background: white;
+        box-shadow: 1px 3px 6px 3px grey;
+        background-color: rgb(139, 163, 139);
+    }
+    
+    .restart-btn {
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, inset -2px 0px 0px -29px rgba(55, 172, 204, 0);
+        box-shadow: 0px 10px 13px -7px #000000, inset -2px 0px 0px -29px rgba(55, 172, 204, 0);
+    }
+    
+    span {
+        font-family: Arial, Helvetica, sans-serif;
     }

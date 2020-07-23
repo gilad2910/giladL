@@ -7,12 +7,29 @@
     <title>Minesweeper!</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<h1>MINESWEEPER</h1>
+<h1>MINESWEEPER 💣 </h1>
+<div>
+    <span>TIME: </span>
+    <span class="timer"> 0</span>
+</div>
+<div class="levels">
+    <button onclick="startGame(0)">EASY</button>
+    <button onclick="startGame(1)">HARD</button>
+    <button onclick="startGame(2)">EXPERT</button>
+</div>
+
+<div class="popup hiden">
+    <div class="popup-contant">
+        <div class="popup-text">GAME OVER</div>
+        <button class="restart-btn" onclick="restartGame()">Restart Game</button>
+    </div>
+</div>
 
 <body onload="init()">
     <div class="board"></div>
     <script src="js/main.js"></script>
     <script src="js/utils.js"></script>
+
 
 
 </body>
